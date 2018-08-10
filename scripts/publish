@@ -14,7 +14,7 @@ test -d ~/src/packnback.github.io/.git
 test -f ~/src/packnback.github.io/index.html
 rm -rf ~/src/packnback.github.io/*
 
-
+export ENABLE_ANALYTICS=true
 # build steps
 ./scripts/build
 

@@ -25,7 +25,9 @@ or even within files with repetitive data.
 
 With this feature we can do daily/hourly/whatever snapshots
 while having low bandwidth and storage requirements. The 
-first backup may take 20 GB, but the next may only be 200 MB.
+first backup may take 20 GB, but the next may only be 200 MB
+with a huge reduction in the cost of retaining a full
+snapshot.
 
 ### Write-only mode
 
