@@ -20,7 +20,7 @@ choices you might have as an administrator trying to bullet proof a your server 
 ### Data deduplication
 
 Don't store or upload the same data twice when not necessary. 
-Share data across backups, this could be across identicle files,
+Share data across backups, this could be across identical files,
 or even within files with repetitive data.
 
 With this feature we can do daily/hourly/whatever snapshots
@@ -36,7 +36,7 @@ we want there to be no way machine A can delete it, instead
 the administrator of machine B must authorize deletion.
 
 This is extremely important in the event that machine A becomes
-infected by ransomware or another such attacker. A compromised
+infected by ransom-ware or another such attacker. A compromised
 machine should only be able to compromise future backups,
 but never past backups.
 
@@ -65,7 +65,7 @@ from attackers in the event of a security breach.
 
 This feature implies public key cryptography where we discard a 
 portion of a generated encryption key per backup. Only the designated
-reciever secret key will be able to decrypt the data, not the sender.
+receiver secret key will be able to decrypt the data, not the sender.
 
 ### Pruning
 
@@ -82,7 +82,7 @@ without manual intervention is a win for everyone.
 ### Open source
 
 We need to be able to see the source code of tools
-to trust thier implementation is reliable, and to trust
+to trust their implementation is reliable, and to trust
 the privacy guarantees it offers.
 
 # Other tools
@@ -96,13 +96,13 @@ Project | Dedup | Write-only | Encryption | Secure keys | Pruning | Open source
 [bup](https://github.com/bup/bup) | y | n | n | n | n | y 
 [zbackup](https://github.com/bup/bup) | y | n | y | n | y | y 
 [restic](https://restic.net/)      | y | y | n | n | y | y 
-[tarsnap](https://www.tarsnap.com/) | y | y | y | y | y | partial-proprietry 
+[tarsnap](https://www.tarsnap.com/) | y | y | y | y | y | partial-proprietary 
 [rclone](https://rclone.org/) | n | n | y | n | n | n
 
 (There are definitely other tools, let me know and the feature sets and I will add them to the list.)
 
 Currently, *to my knowledge* no current software matches the requirements. This
-means there may be a point in the design space that is unaddressed that we can target. So until
+means there may be a point in the design space that is not addressed that we can target. So until
 we have a good reason not to proceed, I think it is a worthy project, and hence this post.
 
 # Summary
