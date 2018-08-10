@@ -113,4 +113,4 @@ along with blog posts and a big picture of how they will compose into a larger r
 
 Please let me know if this interests you, so we can make informed decisions about what people care about.
 
-That's all for now, and stay tuned for the next post.
+That's all for now, and stay tuned for the next post with some code and examples...
