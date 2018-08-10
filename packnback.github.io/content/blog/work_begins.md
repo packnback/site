@@ -6,9 +6,9 @@ draft: false
 ---
 
 This is the beginning of a project to design and implement a new backup tool called
-packnback designed to solve some of the limitations of existing tools.
+packnback.
 
-It makes sense to explain why I we should bother in the first place,
+It makes sense to explain why we should bother in the first place,
 and what interesting features a new tool can bring to the table.
 
 # Ideal features
