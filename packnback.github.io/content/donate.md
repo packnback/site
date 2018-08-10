@@ -13,7 +13,7 @@ they are not a binding contract, but may increase the chances of success.
 
 *donate via liberapay:*
 
-https://en.liberapay.com/packnback*
+https://liberapay.com/packnback
 
 *donate via bitcoin:* 
 
