@@ -82,7 +82,7 @@ the privacy guarantees it offers.
 
 Project | Dedup | Write-only | Encryption | Secure keys | Pruning | Open source 
 :--- | :---: | :---: | :---: | :---: | :---: | :---: 
-[borg backup](https://borgbackup.readthedocs.io/en/stable/) | y | y | y | n | y | y 
+[borg](https://borgbackup.readthedocs.io/en/stable/) | y | y | y | n | y | y 
 [bup](https://github.com/bup/bup) | y | n | n | n | n | y 
 [zbackup](https://github.com/bup/bup) | y | n | y | n | y | y 
 [restic](https://restic.net/)      | y | y | n | n | y | y 
