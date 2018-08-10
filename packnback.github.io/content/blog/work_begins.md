@@ -83,10 +83,10 @@ We need to be able to see the source code of tools
 to trust thier implementation is reliable, and to trust
 the privacy guarantees it offers.
 
-## Other tools
+# Other tools
 
-So now we have a list of features we would like, lets check what exists in the world
-today...
+So now we have a list of features we would like, let's check what exists in the world
+today.
 
 Project | Dedup | Write-only | Encryption | Secure keys | Pruning | Open source 
 :--- | :---: | :---: | :---: | :---: | :---: | :---: 
@@ -99,9 +99,9 @@ Project | Dedup | Write-only | Encryption | Secure keys | Pruning | Open source
 
 (There are definitely other tools, let me know and the feature sets and I will add them to the list.)
 
-Currently, *to my knowledge* no current software matches the requirements... (or yours perhaps?). This
+Currently, *to my knowledge* no current software matches the requirements... . This
 means there may be a point in the design space that is unaddressed that we can target. So until
-we have a good reason not to, I think it is a worthy project, and hence this post.
+we have a good reason not to proceed, I think it is a worthy project, and hence this post.
 
 # Summary
 
@@ -111,6 +111,7 @@ that should tick every box in our feature list (while trying to be as simple as 
 The current plan is to release small, usable, command line tools incrementally as they are implemented,
 along with blog posts and a big picture of how they will compose into a larger robust backup tool.
 
-Please let me know if this interests you, so we can make informed decisions about what people care about.
+Please let me know if this interests you, what I have missed, or some backup horror stories
+to keep me up at night.
 
 That's all for now, and stay tuned for the next post with some code and examples...
