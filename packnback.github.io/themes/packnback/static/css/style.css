@@ -1,0 +1,16 @@
+pre, p, h3		{ margin: 1.9rem 0px 1.9rem; }
+article, .container	{ width: 800px; margin: auto; }
+h1, h2, h3, h4		{ font-family: arial, sans; }
+h2			{ text-align: center; margin-bottom: 3.0rem; }
+pre, code		{ background-color: #eeeeff; line-height: normal; overflow: auto; }
+#logo			{ vertical-align: middle; margin-right: 16px; }
+body			{ font-size: 1.9rem; line-height: 135%; }
+p			{ text-align: justify; }
+html			{ font-size: 62.5%; }
+.bnf			{ background-color: white; padding-left: 2rem; }
+
+@media only screen and (max-device-width: 480px) {
+html			{ font-size: 50%; }
+article, .container	{ width: 90%; }
+p			{ text-align: left; }
+}
