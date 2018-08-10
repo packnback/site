@@ -99,7 +99,7 @@ Project | Dedup | Write-only | Encryption | Secure keys | Pruning | Open source
 
 (There are definitely other tools, let me know and the feature sets and I will add them to the list.)
 
-Currently, *to my knowledge* no current software matches the requirements... . This
+Currently, *to my knowledge* no current software matches the requirements. This
 means there may be a point in the design space that is unaddressed that we can target. So until
 we have a good reason not to proceed, I think it is a worthy project, and hence this post.
 
