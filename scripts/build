@@ -1,0 +1,20 @@
+#! /usr/bin/env bash
+
+set -x
+set -e
+set -u
+set -o pipefail
+
+# preconditions and setup
+test -d .git
+test -d packnback.github.io
+
+if test -d ./packnback.github.io/public
+then
+	rm -rf ./packnback.github.io/public
+fi
+
+cd ./packnback.github.io
+hugo -t packnback
+
+cat ../ledger.txt > public/ledger.txt

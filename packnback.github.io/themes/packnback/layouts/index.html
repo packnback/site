@@ -3,12 +3,15 @@
 		<article>
 			<div>
 				<p>
-					packnback is an ongoing project to build a backup tool from scratch.
-					To understand the rationale, see the <a href="/introducing_packnback/"> introductory post</a>.
+					This site is the home of a <b>work in progress</b> backup tool called packnback.
 				</p>
 
 				<p>
-					To follow along with design and development follow our <a href=""></a>.
+					To understand the rationale of the project, see the <a href="/blog/work_begins/"> introductory post</a>.
+				</p>
+
+				<p>
+					To follow along with design and development progress, simply read this site</a>.
 				</p>
 
 				<p>
@@ -16,11 +19,33 @@
 					remember this project is just starting, so there is not much to see yet.
 				</p>
 
-				packnback relies on sponsors and donations to survive,
-				consider <a href="/donate/">donating</a>.
+				<p>
+					To contact us see the <a href="/contact/">contact page</a>.
+				</p>
+
+				This project relies on sponsors and donations to survive, consider <a href="/donate/">donating</a>.
+
+				<p>
+					P.S. As you can tell, we need someone who understands website design (hugo static site) to help fix things up ... and we need a logo :).
+				</p>
+			</div>
+
+
+			<div>
+				<div>
+					<h3>Blog</h3>
+				</div>
+				<div>
+					<ul>
+						{{ range .Site.Pages }}
+							{{ if eq .Type "blog_post" }}
+								<li><a href="{{ .Permalink }}">{{ .Title }}</a> {{ .PublishDate.Format "January 2, 2006" }}</li>
+							{{end}}
+						{{ end }}
+					</ul>
+				</div>
 			</div>
 		</article>
-
 
 	</main>
 {{ partial "sidebar.html" . }}

@@ -1,0 +1,6 @@
+# This file is an http://hledger.org/ + https://www.ledger-cli.org/ file.
+# You can use those tools to generate reports automatically.
+
+account Expenses
+account Donations:liberapay
+account Donations:bitcoin
