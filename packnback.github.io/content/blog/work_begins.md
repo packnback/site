@@ -92,12 +92,12 @@ today.
 
 Project | Dedup | Write-only | Encryption | Secure keys | Pruning | Open source 
 :--- | :---: | :---: | :---: | :---: | :---: | :---: 
-[borg](https://borgbackup.readthedocs.io/en/stable/) | y | y | y | n | y | y 
 [bup](https://github.com/bup/bup) | y | n | n | n | n | y 
-[zbackup](https://github.com/bup/bup) | y | n | y | n | y | y 
-[restic](https://restic.net/)      | y | y | n | n | y | y 
-[tarsnap](https://www.tarsnap.com/) | y | y | y | y | y | partial-proprietary 
+[borg](https://borgbackup.readthedocs.io/en/stable/) | y | y | y | n | y | y 
 [rclone](https://rclone.org/) | n | n | y | n | n | n
+[restic](https://restic.net/)      | y | n | y | n | y | y 
+[tarsnap](https://www.tarsnap.com/) | y | y | y | y | y | partial-proprietary 
+[zbackup](https://github.com/bup/bup) | y | n | y | n | y | y 
 
 (There are definitely other tools, let me know and the feature sets and I will add them to the list.)
 
