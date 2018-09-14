@@ -34,7 +34,7 @@ of the message.
 - If the server modified data on the server, message signatures would be invalid, alerting
   the backup recipient.
 
-# Prototype Code
+# Prototype code
 
 A high performance prototype tool was written here:
 
