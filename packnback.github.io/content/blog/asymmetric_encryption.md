@@ -52,7 +52,7 @@ backups. The data formats are documented there.
   to the prototype.
 - In the authors opinion GPG has a poor interface for both
   human and automated interfaces.
-- GPG file formats are very complicated.
+- GPG file formats more complicated than needed.
 - GPG can always be used as a master key, encrypting
   an asymcrypt private key.
 - GPG is much more code, so is far harder to audit.
