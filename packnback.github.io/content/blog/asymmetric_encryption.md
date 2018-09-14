@@ -22,7 +22,8 @@ A good example of a model we could emulate is gpg encrypted email. Anyone can se
 encrypted emails to an email server, but the email contents are encrypted and addressed
 to the recipients key pair. Only the recipient can read the message. At the same time,
 the sender could sign the message, meaning the recipient could verify the authenticity
-of the message.
+of the message. In this model, the server is merely a store and forward relay, which
+seems perfect for a backup tool where the server is not fully trusted.
 
 # How packnback should work
 
