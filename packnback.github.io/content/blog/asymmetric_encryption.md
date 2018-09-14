@@ -10,12 +10,13 @@ Rather than spend time explaining (poorly) how public/asymmetric key cryptograph
 works, I'll just summarize the parts we will be using.
 
 - A key is two parts, public and private.
-- A message can be encrypted and addressed to the public key.
-- An encrypted message can only be decrypted by the corresponding private key.
-- A message can be 'signed' by a private key.
-- A message signature can be verified as authentic using the corresponding public key.
+- A message can be encrypted and addressed to a key.
+- The public part of a key can be freely distributed.
+- An encrypted message can only be decrypted by the corresponding private key part.
+- A message can be 'signed' by someone with the private key part.
+- A message signature can be verified as authentic using the corresponding public key part.
 
-# An example Encrypted email
+# Encrypted email
 
 A good example of a model we could emulate is gpg encrypted email. Anyone can send
 encrypted emails to an email server, but the email contents are encrypted and addressed
@@ -43,3 +44,14 @@ https://github.com/andrewchambers/asymcrypt/blob/master/asymcrypt_formats.5.md
 
 This prototype is one of our first building blocks, for public key encrypted deduplicated
 backups. The data formats are documented there.
+
+## Why not GPG?
+
+- Benchmarks showed that GPG was very slow compared
+  to the prototype.
+- In the authors opinion GPG has a poor interface for both
+  human and automated interfaces.
+- GPG file formats are very complicated.
+- GPG can always be used as a master key, encrypting
+  an asymcrypt private key.
+- GPG is much more code, so is far harder to audit.
