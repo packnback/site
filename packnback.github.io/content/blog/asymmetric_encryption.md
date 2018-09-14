@@ -58,8 +58,8 @@ backups. The data formats are documented there.
 
 ### Why use C in 2018?
 
-- C is extremely portable.
 - For this tool in particular, startup time and memory use are extremely important.
 - Other portions of the code may not be in C.
-- In a future post I will formally prove that the C
+- In a future post I will attempt to formally prove that the C
   code has no undefined behavior using frama-c.
+- Failing formal verification, the language may change, but the tool specifications will be unchanged.
