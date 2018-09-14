@@ -34,7 +34,7 @@ of the message.
 - If the server modified data on the server, message signatures would be invalid, alerting
   the backup recipient.
 
-# Code
+# Prototype Code
 
 A high performance prototype tool was written here:
 
@@ -45,7 +45,7 @@ https://github.com/andrewchambers/asymcrypt/blob/master/asymcrypt_formats.5.md
 This prototype is one of our first building blocks, for public key encrypted deduplicated
 backups. The data formats are documented there.
 
-## Why not GPG?
+### Why not use GPG?
 
 - Benchmarks showed that GPG was very slow compared
   to the prototype.
@@ -55,3 +55,11 @@ backups. The data formats are documented there.
 - GPG can always be used as a master key, encrypting
   an asymcrypt private key.
 - GPG is much more code, so is far harder to audit.
+
+### Why use C in 2018?
+
+- C is extremely portable.
+- For this tool in particular, startup time and memory use are extremely important.
+- Other portions of the code may not be in C.
+- In a future post I will formally prove that the C
+  code has no undefined behavior using frama-c.
