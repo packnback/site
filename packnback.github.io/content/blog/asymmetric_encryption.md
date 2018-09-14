@@ -43,7 +43,7 @@ https://github.com/andrewchambers/asymcrypt
 https://github.com/andrewchambers/asymcrypt/blob/master/README.md
 https://github.com/andrewchambers/asymcrypt/blob/master/asymcrypt_formats.5.md
 
-This prototype is one of our first building blocks, for public key encrypted deduplicated
+This prototype is one of our first building blocks for public key encrypted deduplicated
 backups. The data formats are documented there.
 
 ### Why not use GPG?
