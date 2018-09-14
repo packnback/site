@@ -1,0 +1,45 @@
+---
+title: "Asymmetric cryptography"
+date: 2018-09-14T09:25:10+12:00
+type: "blog_post"
+draft: false
+---
+
+
+Rather than spend time explaining (poorly) how public/asymmetric key cryptography
+works, I'll just summarize the parts we will be using.
+
+- A key is two parts, public and private.
+- A message can be encrypted and addressed to the public key.
+- An encrypted message can only be decrypted by the corresponding private key.
+- A message can be 'signed' by a private key.
+- A message signature can be verified as authentic using the corresponding public key.
+
+# An example Encrypted email
+
+A good example of a model we could emulate is gpg encrypted email. Anyone can send
+encrypted emails to an email server, but the email contents are encrypted and addressed
+to the recipients key pair. Only the recipient can read the message. At the same time,
+the sender could sign the message, meaning the recipient could verify the authenticity
+of the message.
+
+# How packnback should work
+
+- A backup server allows public keys to send encrypted data.
+- Only the holder of the recipient key is allowed to access, delete, or download data.
+- The server is only responsible for access control by verifying key holders.
+- The backup recipient fetches data and decrypts it client side like an email server.
+- The server cannot decrypt data.
+- If the server modified data on the server, message signatures would be invalid, alerting
+  the backup recipient.
+
+# Code
+
+A high performance prototype tool was written here:
+
+https://github.com/andrewchambers/asymcrypt
+https://github.com/andrewchambers/asymcrypt/blob/master/README.md
+https://github.com/andrewchambers/asymcrypt/blob/master/asymcrypt_formats.5.md
+
+This prototype is one of our first building blocks, for public key encrypted deduplicated
+backups. The data formats are documented there.
