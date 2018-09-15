@@ -125,6 +125,9 @@ A picture says a thousand words:
 With this scheme even if we uploaded the same directory twice on two different occasions, blocks would be shared across the
 snapshots.
 
+A keen observer would note that in this scheme only the tree leaves need to be encrypted, this will be important later
+for server side garbage collection.
+
 ### Can we apply compression?
 
 I *think* is no problem when compressing the plaintext after hashing but before encryption. I will wait for feedback on that.
