@@ -42,17 +42,17 @@ If we apply encryption to the data:
 ```
 db = {}
 
-recpient_public_key = transfer_via_pidgeon_post()
+recipient_public_key = transfer_via_pidgeon_post()
 sender_public_key, sender_secret_key = keypair()
 
 data1 = "hello\n"
 address1 = sha1sum(data1)
-encrypted1 = encrypt(sender_secret_key, recpient_public_key, data)
-db[address1] = (recpient_public_key, sender_public_key, encrypted1)
+encrypted1 = encrypt(sender_secret_key, recipient_public_key, data)
+db[address1] = (recipient_public_key, sender_public_key, encrypted1)
 
 # The db is now:
 show(db)
--> { "f572d396fae9206628714fb2ce00f72e94f2258f" : (recpient_public_key, sender_public_key, "9853a5325dedc69527f688a0ff31620406c2d77a") }
+-> { "f572d396fae9206628714fb2ce00f72e94f2258f" : (recipient_public_key, sender_public_key, "9853a5325dedc69527f688a0ff31620406c2d77a") }
 
 ```
 
@@ -67,17 +67,17 @@ HMAC functions are like cryptographic hashes, but incorporate a secret producing
 db = {}
 
 hmac_secret = new_secret()
-recpient_public_key = transfer_via_pidgeon_post()
+recipient_public_key = transfer_via_pidgeon_post()
 sender_public_key, sender_secret_key = keypair()
 
 data1 = "hello\n"
 address1 = HMAC(data1, hmac_secret)
-encrypted1 = encrypt(sender_private_key, recpient_public_key, data)
-db[address1] = (recpient_public_key, sender_public_key, encrypted1)
+encrypted1 = encrypt(sender_private_key, recipient_public_key, data)
+db[address1] = (recipient_public_key, sender_public_key, encrypted1)
 
 # The db is now:
 show(db)
--> { "7244e510ea361cbe17219a463a006a295247bc10" : (recpient_public_key, sender_public_key, "fc6de0834d85f243e5792b37f278fbf6c48b88a8") }
+-> { "7244e510ea361cbe17219a463a006a295247bc10" : (recipient_public_key, sender_public_key, "fc6de0834d85f243e5792b37f278fbf6c48b88a8") }
 
 ```
 
