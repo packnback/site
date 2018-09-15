@@ -1,12 +1,15 @@
 digraph structs {
 	node [shape=record];
-	root [label="4f6b9d953213621087cb0eb83182661be11a52d7"];
-	mid [label="{<f0> e5eb313da243282775d6d831d7b83521ca6e151c|<f1> c3133c2b256173709dd99c4baaf9ad0c6bad7c1c|<f2> 723e0f7f1d5c42785907fd54345e9baa0470670b}"];
-	data1 [label="file(skynet.c))"];
-	data2 [label="file(cats.jpg)"];
-	data3 [label="file(password.txt)"];
-	root -> mid:f0;
-	mid:f0 -> data1;
-	mid:f1 -> data2;
-	mid:f2 -> data3;
+	backups [label="<today> /files/yesterday | <yesterday> /files/today"];
+	root1 [label="4f6b9d953213621087cb0eb83182661be11a52d7"];
+	data1 [label="encrypt(file(skynet.c))"];
+	data2 [label="encrypt(file(cats.jpg))"];
+	root2 [label="687fb3728941cf63a658f0a5b6f8c90f9fb818e3"];
+	mid2 [label="{<f0> 51c6bbf0f8c7ef11607e2bfe92b6a969e8f82971 |<f1> c3133c2b256173709dd99c4baaf9ad0c6bad7c1c}"];
+	backups:yesterday->root1;
+	backups:today->root2;
+	root1 -> data1;
+	root2 -> mid2:f0;
+	mid2:f0 -> data1;
+	mid2:f1 -> data2;
 }
