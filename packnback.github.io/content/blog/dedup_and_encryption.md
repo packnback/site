@@ -125,7 +125,7 @@ snapshots.
 
 I *think* is no problem when compressing the plaintext after hashing but before encryption. I will wait for feedback on that.
 
-### Can we deduplicate within and files?
+### Can we deduplicate within and across files?
 
 Another post will cover that. The answer is yes.
 
