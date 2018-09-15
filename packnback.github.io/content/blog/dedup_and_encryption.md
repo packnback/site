@@ -71,7 +71,7 @@ recpient_public_key = transfer_via_pidgeon_post()
 sender_private_key, sender_secret_key = keypair()
 
 data1 = "hello\n"
-address1 = HMAC(data1, secret)
+address1 = HMAC(data1, hmac_secret)
 encrypted1 = encrypt(sender_private_key, recpient_public_key, data)
 db[address1] = (sender_pk, ,  encrypted1)
 
@@ -101,12 +101,16 @@ For the recipient to verify the integrity of the whole database, he needs the HM
 have not been tampered with. There are a few schemes that seem appropriate.
 
 - Encrypt the hmac secret into each cipher text.
-- Use public key cryptography to derive a shared secret between sender and recipient. This is enticing because we probably want to sign our backups with the identity of the sender anyway.
+- Use public key cryptography to derive a shared secret between sender and recipient. This is enticing because we probably want to sign our backups with the identity of the sender anyway, so have a key pair to use.
   This key will be different to the ephemeral keys we used to encrypt our data with.
 - Share the HMAC secret at the same time as we exchange public keys.
 
 # But what about ....
 
+### Hash collisions
+
+Cryptographic hash functions are so difficult to find a collision for that we can effectively
+assume they don't happen.
 
 ### Building a filesystem out of blocks
 
