@@ -116,7 +116,7 @@ assume they don't happen... (provided we choose the hash function wisely)
 ### Building a filesystem out of blocks
 
 A single block of data is not good for deduplicating a mirror image of a directory tree
-as any time a single file changed we need to reupload and store a whole copy. Luckily we can follow the git model
+as any time a single file changed we need to reupload and store a whole lot of redundant data. Luckily we can follow the git model
 and build a tree datastructure by allowing blocks to reference other blocks.
 
 A picture says a thousand words:
@@ -131,7 +131,7 @@ for server side garbage collection.
 
 ### Can we apply compression?
 
-I *think* is no problem when compressing the plaintext after hashing but before encryption. I will wait for feedback on that.
+I *think* there is no problem when compressing the plaintext after hashing but before encryption. I will wait for feedback on that.
 
 ### Can we deduplicate within and across files?
 
