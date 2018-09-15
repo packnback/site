@@ -68,12 +68,12 @@ db = {}
 
 hmac_secret = new_secret()
 recpient_public_key = transfer_via_pidgeon_post()
-sender_private_key, sender_secret_key = keypair()
+sender_public_key, sender_secret_key = keypair()
 
 data1 = "hello\n"
 address1 = HMAC(data1, hmac_secret)
 encrypted1 = encrypt(sender_private_key, recpient_public_key, data)
-db[address1] = (sender_pk, ,  encrypted1)
+db[address1] = (recpient_public_key, sender_public_key, encrypted1)
 
 # The db is now:
 show(db)
