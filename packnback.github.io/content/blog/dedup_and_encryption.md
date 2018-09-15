@@ -111,7 +111,7 @@ have not been tampered with. There are a few schemes that seem appropriate.
 ### Hash collisions
 
 Cryptographic hash functions are so difficult to find a collision for that we can effectively
-assume they don't happen.
+assume they don't happen... (provided we choose the hash function wisely)
 
 ### Building a filesystem out of blocks
 
