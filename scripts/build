@@ -15,6 +15,11 @@ then
 fi
 
 cd ./packnback.github.io
+
+
+mkdir -p static
+cat ../ledger.txt > static/ledger.txt
+dot -Tpng < ./content/blog/dedup_and_encryption_fig1.gv > static/dedup_and_encryption_fig1.png
+
 hugo -t packnback
 
-cat ../ledger.txt > public/ledger.txt
