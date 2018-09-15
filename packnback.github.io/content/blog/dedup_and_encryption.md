@@ -94,6 +94,7 @@ forget(sender_private_key)
 ```
 
 This protects us from future attackers, but we must trust the backup sender to forget the keys.
+This doesn't seem like a problem, because in general we trust our own systems until after a successful attack occurs.
 
 # Sharing the HMAC secret with the recipient
 
