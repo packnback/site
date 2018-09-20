@@ -26,15 +26,15 @@ I mainly put languages I have some experience using or reading about.
 
 ### C
 
-- performance 5/5
-- security 0/5
-- stability 5/5
-- simplicity 5/5
-- popularity 4/5
-- bus-factor 5/5
-- fun 2/5
+- performance 5 / 5
+- security 0 / 5
+- stability 5 / 5
+- simplicity 5 / 5
+- popularity 4 / 5
+- bus-factor 5 / 5
+- fun 2 / 5
 
-total 26/35
+total 26 / 35
 
 In general, C would not be a bad choice if it werent for the track record
 of security problems. Even if we could avoid them in our code, the reputation
@@ -47,15 +47,15 @@ many issues can be mitigated with compiler hardening and tool augmentation like 
 
 ### C++
 
-- performance 5/5
-- security 2/5
-- stability 5/5
-- simplicity 1/5
-- popularity 5/5
-- bus-factor 5/5
-- fun -1/5
+- performance 5 / 5
+- security 2 / 5
+- stability 5 / 5
+- simplicity 1 / 5
+- popularity 5 / 5
+- bus-factor 5 / 5
+- fun 0 / 5
 
-total 22/35
+total 25 / 35
 
 I personally think C++ has gone off the complexity rails when it comes to
 features. It works and is performant, and does better than C with security... but a
@@ -66,15 +66,15 @@ Sometimes a float is a float and doesn't need 100 lines of class boilerplate to 
 
 ### Java
 
-- performance 4/5
-- security 5/5
-- stability 5/5
-- simplicity 3/5
-- popularity 5/5
-- bus-factor 5/5
-- fun 0/5
+- performance 4 / 5
+- security 5 / 5
+- stability 5 / 5
+- simplicity 3 / 5
+- popularity 5 / 5
+- bus-factor 5 / 5
+- fun 0 / 5
 
-total 27/35
+total 27 / 35
 
 Java is pretty damn solid, I have also burned myself out on it. Languages for the JVM
 I can tolerate better like clojure however have greatly reduced performance and sit 
@@ -86,15 +86,15 @@ grains of rice (but at least there is probably a 'Factory' or IDE to do it for y
 
 ### Python/Ruby
 
-- performance 0/5
-- security 5/5
-- stability 5/5
-- simplicity 3/5
-- popularity 5/5
-- bus-factor 5/5
-- fun 5/5
+- performance 0 / 5
+- security 5 / 5
+- stability 5 / 5
+- simplicity 3 / 5
+- popularity 5 / 5
+- bus-factor 5 / 5
+- fun 5 / 5
 
-total 28/35
+total 28 / 35
 
 These languages are slow, and distributing code written in them is painful and
 complicated at best. They are fun and productive to use, though a bit error prone when
@@ -103,15 +103,15 @@ can throw or don't have total test coverage.
 
 ### Go
 
-- performance - 3.5/5
-- security 5/5
-- stability 4.5/5
-- simplicity 3/5
-- popularity 3.5/5
-- bus-factor 4/5
-- fun 4/5
+- performance 3.5 / 5
+- security 5 / 5
+- stability 4.5 / 5
+- simplicity 3 / 5
+- popularity 3.5 / 5
+- bus-factor 4 / 5
+- fun 4 / 5
 
-total 27.5/35
+total 27.5 / 35
 
 Go is pretty rock solid, it works nearly everywhere, has quite a large
 number of projects invested into it already,
@@ -125,39 +125,38 @@ left me a bit bitter and paranoid.
 
 ### [Nim](https://nim-lang.org/)
 
-- performance - 4.5/5
-- security 4/5
-- stability 1/5
-- simplicity 3/5
-- popularity 2/5
-- bus-factor 1/5
-- fun 5/5
+- performance 4.5 / 5
+- security 4 / 5
+- stability 3 / 5
+- simplicity 3 / 5
+- popularity 1 / 5
+- bus-factor 1 / 5
+- fun 5 / 5
 
-total 20.5/35
+total 21.5 / 35
 
 Nim is an amazingly fun language, it performs extremely well from my 
 tests, I think it is a shame that till now it was not more adopted...
-however it is obvious to me that if the creator lost interest the project would grind to a
-total halt, which may be a reason for the lack of adoption.
+however it is obvious to me that if the creator lost interest the project would grind to a total halt, which may be a reason for the lack of adoption.
 
 The macro system seems amazing, I immediately used it to eliminate boilerplate making safe bindings
-to libsodium as a test enjoyed the process a lot.
+to libsodium as a test and definitely enjoyed the process a lot.
 
-Reading github issues, I stumbled across many half done plans from 2013-2016 that show
+Reading github issues and the forum, I stumbled across many plans from 2013-2016 that show
 the project has some great ideas, but not enough man power. Reading the forum shows questions I had, asked by others, half answered and still undocumented.
 
 Nim really does feel like the speed of C with the ease+fun of python. A positive sign
-is the commit frequency is increasing over time, the effect system also looks unique and useful.
+is the commit frequency is increasing over time, but the project is far from mainstream.
 
 ### [Rust](https://www.rust-lang.org)
 
-- performance - 5/5
-- security 5/5
-- stability 4/5
-- simplicity 2/5
-- popularity 3/5
-- bus-factor 4/5
-- fun 4/5
+- performance 5 / 5
+- security 5 / 5
+- stability 4 / 5
+- simplicity 2 / 5
+- popularity 3 / 5
+- bus-factor 4 / 5
+- fun 4 / 5
 
 total 27/35
 
@@ -165,41 +164,40 @@ By all the metrics rust scores pretty well, my biggest concern is it will (or ha
 C++ 2.0 in a bad way, a complicated behemoth.
 
 I don't find the code::that::appealing to look at but I need to be sure it is not just my
-own biases clouding judgement. 
+own biases clouding my judgement. 
 
 Fearless concurrency is definitely something that sells the language well to me, I feel very uneasy
 looking at concurrent code other people wrote where I can't infer which threads have what invariants easily.
-My understanding (which may be wrong) is with rust it doesn't really matter so much as the borrow checker rules also
-eliminate data races.
+My understanding (which may be wrong) is with rust it doesn't really matter so much as the borrow checker rules also eliminate data races.
 
 ### [Zig](https://github.com/ziglang/zig)
 
-- performance 5/5
-- security 3.5/5
-- stability 2/5
-- simplicity 3/5
-- popularity 2/5
-- bus-factor 1/5
-- fun 4/5
+- performance 5 / 5
+- security 3.5 / 5
+- stability 2 / 5
+- simplicity 3 / 5
+- popularity 2 / 5
+- bus-factor 1 / 5
+- fun 4 / 5
 
-total 20.5/35
+total 20.5 / 35
 
 A great language focusing on robust software. The bus factor 
 is an issue, I would have loved if zig could just compile to more or less idiomatic C
-and give projects an escape hatch if things aren't going well for the language development.
+and give projects an escape hatch if things aren't going well for zig development after all.
 
 From a security standpoint it has some of the C pitfalls
 but can use bounds checking and things like arena allocators to mitigate manual memory management.
 
-### (Myrddin)[https://myrlang.org/]
+### [Myrddin](https://myrlang.org/)
 
-- performance 3.5/5
-- security 3.5/5
-- stability 2/5
-- simplicity 4/5
-- popularity 0/5
-- bus-factor 1/5
-- fun 5/5
+- performance 3.5 / 5
+- security 3.5 / 5
+- stability 2 / 5
+- simplicity 4 / 5
+- popularity 0 / 5
+- bus-factor 1 / 5
+- fun 5 / 5
 
 total 19/35
 
@@ -213,15 +211,15 @@ another unrelated part of the code.
 
 ### Haskell
 
-- performance ?/5
-- security 5/5
-- stability 4/5
-- simplicity 3/5
-- popularity 3/5
-- bus-factor 5/5
-- fun ?/5
+- performance ? / 5
+- security 5 / 5
+- stability 4 / 5
+- simplicity 3 / 5
+- popularity 3 / 5
+- bus-factor ? / 5
+- fun ? / 5
 
-total (20-35)?/35
+total ? / 35
 
 This is a bit of a wild card, I am not experienced at all with haskell, but my impression
 is it may not be well suited to imperitive operations like read buffers from a stream and
@@ -238,7 +236,7 @@ highly in the scheme of things. In fact there are a few tools like 'bup' written
 of C and python quite successfully. I am ruling these languages out just in the off chance
 that I can out perform existing software as a differentiator.
 
-With regard to java, I now feel illogical, but simply don't enjoy using it or the 
+With regard to java, I feel irrational, but simply don't enjoy using it or the 
 programming styles it encourages, so I am just going to veto it. 
 
 My gut feeling is that with rust you accept pain to get performance. Go code looks
