@@ -168,7 +168,7 @@ total 27 / 35
 By all the metrics rust scores pretty well, my biggest concern is it will (or has) turn into
 C++ 2.0 in a bad way, a complicated behemoth.
 
-I don't find the code::that::appealing to look at including some minor things that imo
+I don't find the code::that::appealing to look at including some minor things that
 make the code hard to scan through by eye. Though I need to be sure it is not just my
 own biases and non familiarity clouding my judgement. 
 
