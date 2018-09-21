@@ -6,7 +6,8 @@ draft: false
 ---
 
 Choosing a programming language for a project is a compromise over what you
-what you need, what you have, what you know and what you like.
+what you need, what you have, what you know and what you like. This post
+is just my thought process when selecting the implementation language for packnback.
 
 # What we need
 
@@ -51,11 +52,11 @@ many issues can be mitigated with compiler hardening and tool augmentation like 
 - security 2 / 5
 - stability 5 / 5
 - simplicity 1 / 5
-- popularity 5 / 5
+- popularity 4 / 5
 - bus-factor 5 / 5
 - fun 0 / 5
 
-total 25 / 35
+total 24 / 35
 
 I personally think C++ has gone off the complexity rails when it comes to
 features. It works and is performant, and does better than C with security... but a
@@ -78,8 +79,7 @@ total 27 / 35
 
 Java is pretty damn solid, I have also burned myself out on it. Languages for the JVM
 I can tolerate better like clojure however have greatly reduced performance and sit 
-at a far lower bus factor. The interesting thing is they leverage JVM popularity to
-increase their own appeal.
+at a far lower bus factor.
 
 Someone once described Java classes and code layout like shrink wrapping individual
 grains of rice (but at least there is probably a 'Factory' or IDE to do it for you).
@@ -87,14 +87,14 @@ grains of rice (but at least there is probably a 'Factory' or IDE to do it for y
 ### Python/Ruby
 
 - performance 0 / 5
-- security 5 / 5
+- security 4 / 5
 - stability 5 / 5
 - simplicity 3 / 5
 - popularity 5 / 5
 - bus-factor 5 / 5
 - fun 5 / 5
 
-total 28 / 35
+total 27 / 35
 
 These languages are slow, and distributing code written in them is painful and
 complicated at best. They are fun and productive to use, though a bit error prone when
@@ -135,9 +135,11 @@ left me a bit bitter and paranoid.
 
 total 21.5 / 35
 
-Nim is an amazingly fun language, it performs extremely well from my 
-tests, I think it is a shame that till now it was not more adopted...
-however it is obvious to me that if the creator lost interest the project would grind to a total halt, which may be a reason for the lack of adoption.
+Nim is a fun language, it performs extremely well from my 
+tests, I think it is a shame that till now it was not more adopted.
+
+One problem is that if the creator lost interest the project would grind to a total halt,
+which may be a reason for the lack of adoption.
 
 The macro system seems amazing, I immediately used it to eliminate boilerplate making safe bindings
 to libsodium as a test and definitely enjoyed the process a lot.
@@ -146,7 +148,8 @@ Reading github issues and the forum, I stumbled across many plans from 2013-2016
 the project has some great ideas, but not enough man power. Reading the forum shows questions I had, asked by others, half answered and still undocumented.
 
 Nim really does feel like the speed of C with the ease+fun of python. A positive sign
-is the commit frequency is increasing over time, but the project is far from mainstream.
+is the commit frequency is increasing over time, and they got sponsorship recently,
+but the project is far from mainstream.
 
 ### [Rust](https://www.rust-lang.org)
 
@@ -163,8 +166,9 @@ total 27/35
 By all the metrics rust scores pretty well, my biggest concern is it will (or has) turn into
 C++ 2.0 in a bad way, a complicated behemoth.
 
-I don't find the code::that::appealing to look at but I need to be sure it is not just my
-own biases clouding my judgement. 
+I don't find the code::that::appealing to look at including some minor things that imo
+make the code hard to scan through by eye. Though I need to be sure it is not just my
+own biases and non familiarity clouding my judgement. 
 
 Fearless concurrency is definitely something that sells the language well to me, I feel very uneasy
 looking at concurrent code other people wrote where I can't infer which threads have what invariants easily.
@@ -183,8 +187,13 @@ My understanding (which may be wrong) is with rust it doesn't really matter so m
 total 20.5 / 35
 
 A great language focusing on robust software. The bus factor 
-is an issue, I would have loved if zig could just compile to more or less idiomatic C
+is an issue.
+
+I would have loved if zig could just compile to more or less idiomatic C
 and give projects an escape hatch if things aren't going well for zig development after all.
+
+Zig is the only language I know to have a totally seamless C interop where you can include
+C headers directly in zig code, other languages could learn from this.
 
 From a security standpoint it has some of the C pitfalls
 but can use bounds checking and things like arena allocators to mitigate manual memory management.
@@ -195,17 +204,20 @@ but can use bounds checking and things like arena allocators to mitigate manual 
 - security 3.5 / 5
 - stability 2 / 5
 - simplicity 4 / 5
-- popularity 0 / 5
+- popularity 1 / 5
 - bus-factor 1 / 5
 - fun 5 / 5
 
-total 19/35
+total 20 / 35
 
 Much of what applies to zig applies to Myrddin, a solid and fun language.
-It is however less popular right now and doesn't have windows support. Myrddin
-does not use llvm and suffers in performance, but gains simplicity because of that.
+It is however less popular right now and doesn't have windows support.
 
-Myrddins type inference in a C like context really feels quite magical to use. My favourite
+Myrddin does not use llvm and suffers in performance, but gains simplicity because of that.
+It is a joy to build the myrddin compiler from source in a few seconds compared to 20+ minutes
+that other langauges require.
+
+Myrddin's type inference in a C like context really feels quite magical to use. My favourite
 example was 'malloc()' knowing and returning the right pointer type and size which it inferred automatically from
 another unrelated part of the code.
 
@@ -244,4 +256,4 @@ more minimal, the tools are simpler, and the language is easier to learn, but yo
 always question if you are getting the best of the best or just 'good enough'.
 In the end we would probably regret aspects of either choice.
 
-This time I choose ... XXX
+This time I choose ... [rust](https://github.com/packnback/packnback).
