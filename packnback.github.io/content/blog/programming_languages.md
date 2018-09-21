@@ -236,7 +236,7 @@ another distant part of the code.
 total ? / 35
 
 This is a bit of a wild card, I am not experienced at all with haskell, but my impression
-is it may not be well suited to imperitive operations like read buffers from a stream and
+is it may not be well suited to imperative operations like read buffers from a stream and
 write buffers to a stateful database. I could be totally wrong or ignorant and would like
 to one day address my ignorance.
 
