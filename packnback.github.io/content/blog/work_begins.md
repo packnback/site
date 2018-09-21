@@ -6,7 +6,8 @@ draft: false
 ---
 
 This is the beginning of a project to design and implement a new backup tool called
-packnback, which aims to provide an open source security sensitive backup tool.
+packnback, which aims to provide a high performance, security conscious, open source,
+security conscious backup tool.
 
 It makes sense to explain why we should bother in the first place,
 and what interesting features a new tool can bring to the table.
