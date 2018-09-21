@@ -221,7 +221,7 @@ that other langauges require.
 
 Myrddin's type inference in a C like context really feels quite magical to use. My favourite
 example was 'malloc()' knowing and returning the right pointer type and size which it inferred automatically from
-another unrelated part of the code.
+another distant part of the code.
 
 ### [Haskell](https://www.haskell.org/)
 
