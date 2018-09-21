@@ -161,7 +161,7 @@ but the project is far from mainstream.
 - bus-factor 4 / 5
 - fun 4 / 5
 
-total 27/35
+total 27 / 35
 
 By all the metrics rust scores pretty well, my biggest concern is it will (or has) turn into
 C++ 2.0 in a bad way, a complicated behemoth.
