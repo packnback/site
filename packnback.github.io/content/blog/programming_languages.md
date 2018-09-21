@@ -46,6 +46,10 @@ C gurus can make amazing things happen with few lines of code, (partially becaus
 operating system is the garbage collector and abort() is the error handling) and in practice
 many issues can be mitigated with compiler hardening and tool augmentation like valgrind.
 
+edit: It has been pointed out to me that C has lots of subtle complexity, and perhaps
+5/5 for simplicity is not correct, this is a very good argument, but I won't change
+my initial numbers even if my mind might be changing on that point.
+
 ### C++
 
 - performance 5 / 5
@@ -84,7 +88,7 @@ grains of rice (but at least there is probably a 'Factory' or IDE to do it for y
 
 An honorable mention here is languages clojure that runs along side java as a 
 library, which may be one of the most productive and highest level languages I know (more than python!)...
-however it does have greatly reduced performance and sit  at a far lower bus factor.
+however it does have greatly reduced performance and sits at a far lower bus factor.
 
 ### [Python](https://www.python.org/)/[Ruby](https://www.ruby-lang.org/)
 
@@ -102,6 +106,9 @@ These languages are slow, and distributing code written in them is painful and
 complicated at best. They are fun and productive to use, though a bit error prone when
 your lines of code get above around 10k and you start forgetting what exceptions things
 can throw or don't have total test coverage.
+
+There are probably more sucessful python or ruby projects than there are failed projects
+in many of the other languages combined.
 
 ### [Go](https://golang.org/)
 
