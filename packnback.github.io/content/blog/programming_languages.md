@@ -46,9 +46,10 @@ C gurus can make amazing things happen with few lines of code, (partially becaus
 operating system is the garbage collector and abort() is the error handling) and in practice
 many issues can be mitigated with compiler hardening and tool augmentation like valgrind.
 
-edit: It has been pointed out to me that C has lots of subtle complexity, and perhaps
-5/5 for simplicity is not correct, this is a very good argument, but I won't change
-my initial numbers even if my mind might be changing on that point.
+edit:
+
+It has been pointed out to me that C has lots of subtle complexity, and perhaps 5/5 for simplicity is not correct. I won't change
+my initial numbers (to preserve a record) even if my mind might be changing on that point.
 
 ### C++
 
