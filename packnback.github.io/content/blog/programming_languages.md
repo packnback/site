@@ -84,7 +84,7 @@ at a far lower bus factor.
 Someone once described Java classes and code layout like shrink wrapping individual
 grains of rice (but at least there is probably a 'Factory' or IDE to do it for you).
 
-### Python/Ruby
+### [Python](https://www.python.org/)/[Ruby](https://www.ruby-lang.org/)
 
 - performance 0 / 5
 - security 4 / 5
@@ -101,7 +101,7 @@ complicated at best. They are fun and productive to use, though a bit error pron
 your lines of code get above around 10k and you start forgetting what exceptions things
 can throw or don't have total test coverage.
 
-### Go
+### [Go](https://golang.org/)
 
 - performance 3.5 / 5
 - security 5 / 5
@@ -174,7 +174,7 @@ Fearless concurrency is definitely something that sells the language well to me,
 looking at concurrent code other people wrote where I can't infer which threads have what invariants easily.
 My understanding (which may be wrong) is with rust it doesn't really matter so much as the borrow checker rules also eliminate data races.
 
-### [Zig](https://github.com/ziglang/zig)
+### [Zig](https://ziglang.org/)
 
 - performance 5 / 5
 - security 3.5 / 5
@@ -221,7 +221,7 @@ Myrddin's type inference in a C like context really feels quite magical to use. 
 example was 'malloc()' knowing and returning the right pointer type and size which it inferred automatically from
 another unrelated part of the code.
 
-### Haskell
+### [Haskell](https://www.haskell.org/)
 
 - performance ? / 5
 - security 5 / 5
