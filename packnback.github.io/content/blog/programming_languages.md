@@ -77,12 +77,14 @@ Sometimes a float is a float and doesn't need 100 lines of class boilerplate to 
 
 total 27 / 35
 
-Java is pretty damn solid, I have also burned myself out on it. Languages for the JVM
-I can tolerate better like clojure however have greatly reduced performance and sit 
-at a far lower bus factor.
+Java is pretty damn solid, I have also burned myself out on it.
 
 Someone once described Java classes and code layout like shrink wrapping individual
 grains of rice (but at least there is probably a 'Factory' or IDE to do it for you).
+
+An honorable mention here is languages clojure that runs along side java as a 
+library, which may be one of the most productive and highest level languages I know (more than python!)...
+however it does have greatly reduced performance and sit  at a far lower bus factor.
 
 ### [Python](https://www.python.org/)/[Ruby](https://www.ruby-lang.org/)
 
@@ -244,7 +246,7 @@ In the end Python, Ruby, Java, Go and Rust are the contenders, which probably do
 as a surprise to anyone. Perhaps what surprised me is how high C rates all things considered.
 
 I originally thought I should discount python and ruby outright, but they rank quite
-highly in the scheme of things. In fact there are a few tools like 'bup' written in a mix
+highly in the scheme of things. In fact there are a few tools like [bup](https://github.com/bup/bup) written in a mix
 of C and python quite successfully. I am ruling these languages out just in the off chance
 that I can out perform existing software as a differentiator.
 
@@ -256,4 +258,4 @@ more minimal, the tools are simpler, and the language is easier to learn, but yo
 always question if you are getting the best of the best or just 'good enough'.
 In the end we would probably regret aspects of either choice.
 
-This time I choose ... [rust](https://github.com/packnback/packnback).
+This time I choose ... [rust](https://www.rust-lang.org).
