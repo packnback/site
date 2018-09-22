@@ -1,6 +1,6 @@
 ---
 title: "Deduplication and encryption"
-date: 2018-09-15T11:26:59+12:00
+date: 2018-09-15
 type: "blog_post"
 draft: false
 ---

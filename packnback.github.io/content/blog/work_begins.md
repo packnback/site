@@ -1,6 +1,6 @@
 ---
 title: "Work begins"
-date: 2018-08-10T09:25:10+12:00
+date: 2018-08-10
 type: "blog_post"
 draft: false
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Asymmetric cryptography"
-date: 2018-09-14T09:25:10+12:00
+date: 2018-09-14
 type: "blog_post"
 draft: false
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Programming languages"
-date: 2018-09-20T11:26:59+12:00
+date: 2018-09-20
 type: "blog_post"
 draft: false
 ---
