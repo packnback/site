@@ -139,11 +139,11 @@ left me a bit bitter and paranoid.
 - security 4 / 5
 - stability 3 / 5
 - simplicity 3 / 5
-- popularity 1 / 5
+- popularity 2 / 5
 - bus-factor 1 / 5
 - fun 5 / 5
 
-total 21.5 / 35
+total 22.5 / 35
 
 Nim is a fun language, it performs extremely well from my 
 tests, I think it is a shame that till now it was not more adopted.
@@ -160,6 +160,9 @@ the project has some great ideas, but not enough man power. Reading the forum sh
 Nim really does feel like the speed of C with the ease+fun of python. A positive sign
 is the commit frequency is increasing over time, and they got sponsorship recently,
 but the project is far from mainstream.
+
+edit: I had previously put Nim at a popularity lower than Zig, this is false by
+most metrics so swapped the scores.
 
 ### [Rust](https://www.rust-lang.org)
 
@@ -190,11 +193,11 @@ My understanding (which may be wrong) is with rust it doesn't really matter so m
 - security 3.5 / 5
 - stability 2 / 5
 - simplicity 3 / 5
-- popularity 2 / 5
+- popularity 1 / 5
 - bus-factor 1 / 5
 - fun 4 / 5
 
-total 20.5 / 35
+total 19.5 / 35
 
 A great language focusing on robust software. The bus factor 
 is an issue.
